@@ -1,0 +1,13 @@
+<div class="row mb-3 align-items-end">
+    <div class="col-md-4">
+      <label for="searchDept" class="form-label">Search by Department:</label>
+      <input type="text" id="searchDept" class="form-control" [(ngModel)]="searchDepartment" name="searchDepartment">
+    </div>
+    <div class="col-md-4">
+      <label for="searchPos" class="form-label">Search by Position:</label>
+      <input type="text" id="searchPos" class="form-control" [(ngModel)]="searchPosition" name="searchPosition">
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary w-100" (click)="onSearch()">Search</button>
+    </div>
+  </div>
